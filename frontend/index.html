@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Development Board</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="header__brand">
+          <span class="header__mark">PD</span>
+          <div>
+            <h1 class="header__title">Personal Development Board</h1>
+            <p class="header__subtitle">
+              Track goals, habits and learning in one place.
+            </p>
+          </div>
+        </div>
+        <button class="button" type="button" id="add-card">New card</button>
+      </header>
+
+      <main class="board" id="board">
+        <article class="card">
+          <div class="card__top">
+            <span class="badge badge--focus">Focus</span>
+            <span class="card__meta">This week</span>
+          </div>
+          <h2 class="card__title">Current Goals</h2>
+          <p class="card__text">
+            Placeholder for the goals you are actively working toward.
+          </p>
+          <div class="progress" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress__bar" style="width: 60%"></div>
+          </div>
+          <footer class="card__footer">
+            <span>3 of 5 complete</span>
+            <span class="card__link">View</span>
+          </footer>
+        </article>
+
+        <article class="card">
+          <div class="card__top">
+            <span class="badge badge--habit">Habits</span>
+            <span class="card__meta">Daily</span>
+          </div>
+          <h2 class="card__title">Habit Streaks</h2>
+          <p class="card__text">
+            Placeholder for daily habits and the streaks behind them.
+          </p>
+          <div class="progress" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress__bar" style="width: 80%"></div>
+          </div>
+          <footer class="card__footer">
+            <span>8 day streak</span>
+            <span class="card__link">View</span>
+          </footer>
+        </article>
+
+        <article class="card">
+          <div class="card__top">
+            <span class="badge badge--learn">Learning</span>
+            <span class="card__meta">In progress</span>
+          </div>
+          <h2 class="card__title">Reading &amp; Courses</h2>
+          <p class="card__text">
+            Placeholder for books, courses and notes worth revisiting.
+          </p>
+          <div class="progress" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress__bar" style="width: 35%"></div>
+          </div>
+          <footer class="card__footer">
+            <span>2 active</span>
+            <span class="card__link">View</span>
+          </footer>
+        </article>
+
+        <article class="card card--empty">
+          <div class="card__plus" aria-hidden="true">+</div>
+          <h2 class="card__title">Add a new area</h2>
+          <p class="card__text">
+            Dynamic cards will be rendered here from app.js.
+          </p>
+        </article>
+      </main>
+
+      <footer class="footer">
+        <span>Personal Development Board</span>
+      </footer>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
